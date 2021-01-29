@@ -2,7 +2,7 @@
 
 This is application configured with ecto_mnesia v0.9.1 (https://hexdocs.pm/ecto_mnesia/readme.html) dependancy.
 
-#### This is the git hub of ecto_mnesia (https://github.com/Nebo15/ecto_mnesia)
+### This is the git hub of ecto_mnesia (https://github.com/Nebo15/ecto_mnesia)
 
 # Installation
 
