@@ -15,6 +15,7 @@ defmodule MyApp.MixProject do
   def application do
     [
       applications: [:ecto_mnesia],
+      mod: {MyApp.Application, []},
       extra_applications: [:logger]
     ]
   end

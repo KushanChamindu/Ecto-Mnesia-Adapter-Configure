@@ -7,22 +7,20 @@ defmodule MyApp.Application do
   use Application
 
   def start(_type, _args) do
-    # {:ok, _pid} = SMPPGenESME.start_link()
 
     children = [
-      # Starts a worker by calling: SMPPBackend.Worker.start_link(arg)
-      # {SMPPBackend.Worker, arg}
-      # {Task.Supervisor, name: SMPPGenESME.TaskSupervisor},
-      # {CircuitBreaker.Api.Switch, []},
-      {MyApp,[]},
-      MyRepo
+      {MyApp, [ ]},
+      %{
+        id: MyRepo,
+        start: {MyRepo, :start_link, []}
+      }
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
     # for other strategies and supported options
-    opts = [strategy: :one_for_one, name: MyRepo]
+    opts = [strategy: :one_for_one, name: MyApp.Supervisor]
     {:ok, pid} = Supervisor.start_link(children, opts)
-    Logger.info("SmppBackend started...")
+    Logger.info("MyApp started...")
     IO.inspect("#######################################")
     {:ok, pid}
   end
