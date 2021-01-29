@@ -44,4 +44,6 @@ After intall the application. We have to run followings respectively on terminal
 ````
 
 After run this commands it will generate your mnesia badat base.
-Then make sure your repo is runing on your supervision tree before run repo functions
+Then make sure your repo is runing on your supervision tree before run repo functions.
+
+## Feel free to contact me if you have any issue with this codes. (kushanchamindu.17@cse.mrt.ac.lk)
