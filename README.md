@@ -68,3 +68,5 @@ You have to check below files;
     4. priv/my_repo/migrations/<migration id>_my_repo.ex
 
 `priv/data/mnesia` This folder files will auto generate
+
+Make sure your, `priv/data/mnesia` folder files add to the git ignore. Becuase your database should not be public. This project is for learning purpuse. So i did not add `priv/data/mnesia` folder to git ignore.
