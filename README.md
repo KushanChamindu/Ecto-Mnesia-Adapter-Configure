@@ -47,3 +47,15 @@ After intall the application. We have to run followings respectively on terminal
 
 After run this commands it will generate your mnesia badat base.
 Then make sure your repo is runing on your supervision tree before run repo functions. I don't do any testing things.
+
+After run this application, It create Myrepo application and liked with the main supervisor, For check that you can use,
+
+````bash
+iex -S mix
+````
+
+```elixir
+:observer.start
+````
+
+After you run above code, then it will appear application box. Go to the application tab. You can vizually see your run time supervision tree.
