@@ -59,3 +59,10 @@ iex -S mix
 ````
 
 After you run above code, then it will appear application box. Go to the application tab. You can vizually see your run time supervision tree.
+
+You have to check below files,
+
+    1. mix.exs
+    2. config/config.exs
+    3. lib
+    4. priv/my_repo/migrations/<migration id>_my_repo.ex
